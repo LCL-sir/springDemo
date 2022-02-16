@@ -1,0 +1,17 @@
+
+server:
+  port: 8099
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai #部署jdbc:mysql://192.168.7.103:3306/muckplatform?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password:  #部署 dzl86515525 本地 root
+
+mybatis:
+  typeAliasesPackage: com.entity
+  mapperLocations: classpath:mapper/*.xml
+
+
+
+
